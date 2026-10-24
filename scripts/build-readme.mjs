@@ -180,7 +180,7 @@ function collectCategories(people) {
   return listed.filter((c) => used.has(c.slug));
 }
 
-function buildAll(people, rng, seedText) {
+function buildAll(people, rng) {
   const cats = collectCategories(people);
   const groups = cats
     .map((cat) => {
@@ -198,9 +198,6 @@ function buildAll(people, rng, seedText) {
 
   const lines = [
     `收录 **${people.length}** 人 · 分 **${groups.length}** 类。`,
-    '',
-    `> 排列规则：类内先按知名度分档（**L1** 顶级 → **L3** 值得关注），**顶级在昵称前打 ${TOP_STAR}**。**顶级固定排在最顶部**，内部保持中文组 → 英文组、按收录顺序；其余各档中文组 / 英文组各自随机、两组前后也随机。**每次重排名单会变，顶级和档位不变**。本次种子 \`${seedText}\`` +
-      `（换排列：\`node scripts/build-readme.mjs --seed=<值>\`）。`,
     '',
     `**类目**：${groups.map((g) => `[${g.cat.label}](#${anchor(titleText(g.cat, g.list.length))})（${g.list.length}）`).join(' · ')}`,
   ];
@@ -228,7 +225,7 @@ function main() {
   }
 
   const { text, groups } = people.length
-    ? buildAll(people, rng, seedText)
+    ? buildAll(people, rng)
     : { text: '尚无收录。', groups: [] };
 
   const next = md.slice(0, start + BEGIN.length) + '\n\n' + text + '\n\n' + md.slice(end);

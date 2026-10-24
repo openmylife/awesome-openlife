@@ -1,6 +1,6 @@
 # awesome-openlife
 
-> 🔗 **想「开源自己」？** 从 **[openmylife/openmylife](https://github.com/openmylife/openmylife)** 模板仓开始（`Use this template`）；本仓只负责**收录**。看样板间 👉 **[muamu/openmylife](https://github.com/muamu/openmylife)**。
+> 🔗 **想「开源自己」？** 从 **[openmylife/openmylife](https://github.com/openmylife/openmylife)** 模板仓开始（`Use this template`）；本仓只负责**收录**。官网 👉 **[openmylife.xyz](https://openmylife.xyz)** · 样板间 👉 **[muamu/openmylife](https://github.com/muamu/openmylife)**。
 
 > 一个「**把自己开源的人**」的收录清单 —— 像 awesome-list，但只收录**人类**。
 
@@ -14,13 +14,11 @@
 
 ## 收录清单
 
-清单按**类目**分组，每类一张表；顶级的 id 前会打 `⭐️`。类内排列：**先按知名度分档**（`L1` 顶级 / `L2` 圈内知名 / `L3` 值得关注），**顶级永远在最顶部**，内部保持中文组 → 英文组、按收录顺序；其余各档中文、英文各成一组、组内随机排，两组前后也随机 —— 每次重排名单会变，**顶级和档位不变**。分档由维护者判定，可提 PR 复议。
+> 排列与分档规则见文末「[排列规则](#排列规则)」。
 
 <!-- BEGIN GENERATED -->
 
 收录 **20** 人 · 分 **5** 类。
-
-> 排列规则：类内先按知名度分档（**L1** 顶级 → **L3** 值得关注），**顶级在昵称前打 ⭐️**。**顶级固定排在最顶部**，内部保持中文组 → 英文组、按收录顺序；其余各档中文组 / 英文组各自随机、两组前后也随机。**每次重排名单会变，顶级和档位不变**。本次种子 `2026-10-25`（换排列：`node scripts/build-readme.mjs --seed=<值>`）。
 
 **类目**：[AI 与 Agent 技能](#ai-与-agent-技能--7-人)（7） · [独立产品与一人公司](#独立产品与一人公司--3-人)（3） · [长文与人生叙事](#长文与人生叙事--3-人)（3） · [个人数据与量化自我](#个人数据与量化自我--2-人)（2） · [知识与决策系统](#知识与决策系统--5-人)（5）
 
@@ -140,6 +138,10 @@ node scripts/build-readme.mjs
 
 不传参数时用**当天日期**做种子：同一天跑几次结果一致（不污染 git diff），换一天自动换一批排列。
 
+## 排列规则
+
+清单按**类目**分组，每类一张表；顶级的 id 前会打 `⭐️`。类内排列：**先按知名度分档**（`L1` 顶级 / `L2` 圈内知名 / `L3` 值得关注），**顶级永远在最顶部**，内部保持中文组 → 英文组、按收录顺序；其余各档中文、英文各成一组、组内随机排，两组前后也随机 —— 每次重排名单会变，**顶级和档位不变**。分档由维护者判定，可提 PR 复议。
+
 ## 联系
 
 - 邮箱：[openmylife.xyz@gmail.com](mailto:openmylife.xyz@gmail.com) —— 收录提名、退出申请、纠错与任何疑问都可邮件联系维护者。
@@ -151,5 +153,7 @@ node scripts/build-readme.mjs
 > 收录条目中的个人信息版权归被收录者本人；本仓仅在对方已公开的前提下做索引与转述。
 
 ---
+
+🔗 模板仓 **[openmylife/openmylife](https://github.com/openmylife/openmylife)**（`Use this template`） · 官网 **[openmylife.xyz](https://openmylife.xyz)**
 
 *维护者：[`openmylife`](https://github.com/openmylife)*
